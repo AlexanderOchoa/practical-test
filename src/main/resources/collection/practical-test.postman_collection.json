@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "ec5e7da0-42e5-4c6e-836a-c1d62817c72c",
+		"name": "practical-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1483689",
+		"_collection_link": "https://crimson-shadow-635086.postman.co/workspace/HospitalCayetano-Develop~73aec996-7684-4228-9707-7a2f46e880bb/collection/1483689-ec5e7da0-42e5-4c6e-836a-c1d62817c72c?action=share&source=collection_link&creator=1483689"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alexander\",\r\n    \"email\": \"alex@gmail.com\",\r\n    \"username\": \"aochoa\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjk3ODU1ODEsInN1YiI6ImFsZXhAZ21haWwuY29tIn0.9LS0HxSiNC25FohAE2_vjCGKJBOvOHPFGGCUpKzv375UCmObXPIvWIpAcvXNNWb07UzBfv082xX_crGkWKHdxw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjk3ODU1ODEsInN1YiI6ImFsZXhAZ21haWwuY29tIn0.9LS0HxSiNC25FohAE2_vjCGKJBOvOHPFGGCUpKzv375UCmObXPIvWIpAcvXNNWb07UzBfv082xX_crGkWKHdxw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjk3ODU1ODEsInN1YiI6ImFsZXhAZ21haWwuY29tIn0.9LS0HxSiNC25FohAE2_vjCGKJBOvOHPFGGCUpKzv375UCmObXPIvWIpAcvXNNWb07UzBfv082xX_crGkWKHdxw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUser\": 3,\r\n    \"name\": \"Alexander\",\r\n    \"email\": \"alex@gmail.com\",\r\n    \"username\": \"aochoa22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjk3ODU1ODEsInN1YiI6ImFsZXhAZ21haWwuY29tIn0.9LS0HxSiNC25FohAE2_vjCGKJBOvOHPFGGCUpKzv375UCmObXPIvWIpAcvXNNWb07UzBfv082xX_crGkWKHdxw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
